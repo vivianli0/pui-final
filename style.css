@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+/* nav */
+
+.nav-bar {
+    background: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* fixed position */
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-jump {
+    background: rgb(189, 189, 189);
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.nav-jump:hover {
+    background: grey;
+}
+
+.left-scroll, .right-scroll {
+    background: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+
+.left-scroll {
+    margin-right: 70px;
+}
+
+.right-scroll {
+    margin-left: 70px;
+}
+
+/* header SVG */
+
+.earth-title-img {
+    width: 99.8vw;
+    height: 600px;
+    border: grey solid 1px;
+    /* account for fixed navbar */
+    margin-top: 100px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+h1, h2{
+    color: white;
+}
+
+p {
+    color: rgb(253, 237, 157);
+}
+
+.page-title {
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    font-size: 35px;
+    margin: 0;
+}
+
+.introduction {
+    width: 70%;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+/* timeline */
+
+.timeline-item {
+    height: 500px;
+    width: 90vw;
+    border: grey solid 1px;
+    border-left: white solid 3px;
+    margin-left: 60px;
+}
+
+.timeline-box {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.timeline-title {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.timeline-description {
+    margin: 0;
+    font-size: 20px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+
