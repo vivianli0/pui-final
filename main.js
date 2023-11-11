@@ -41,5 +41,3 @@ function hidePop() {
 
 button.addEventListener('click', showPop);
 blocker.addEventListener('click', hidePop);
-
-// animation test
