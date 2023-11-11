@@ -12,9 +12,8 @@ function navColorChange() {
         const divStart = div.offsetTop - offset;
         const divEnd = div.offsetTop + div.offsetHeight - offset - 0.1;
 
-        //fine-tuning
-        console.log('section ' + (i+1) + ' starts at: ' + divStart);
-        console.log('section ' + (i+1) + ' ends at: ' + divEnd);
+        // console.log('section ' + (i+1) + ' starts at: ' + divStart);
+        // console.log('section ' + (i+1) + ' ends at: ' + divEnd);
 
         if (window.scrollY > divEnd || window.scrollY < divStart) {
             button.style.backgroundColor = '';
@@ -23,5 +22,24 @@ function navColorChange() {
         }
     }
 }
+
+// pop-up
+let pop = document.getElementById('pop-up-1');
+let blocker = document.getElementById('blocker-1');
+let button = document.getElementById('button-1');
+
+function showPop() {
+    pop.style.visibility = 'visible';
+    blocker.style.visibility = 'visible';
+    pop.style.zIndex = '100';
+}
+
+function hidePop() {
+    pop.style.visibility = 'hidden';
+    blocker.style.visibility = 'hidden';
+}
+
+button.addEventListener('click', showPop);
+blocker.addEventListener('click', hidePop);
 
 // animation test
