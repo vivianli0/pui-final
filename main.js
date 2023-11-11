@@ -1,18 +1,27 @@
-// get button, get a range, color changes within that range
+// responsive nav
+window.addEventListener('scroll', navColorChange);
+
+let navJumps = ['nav-jump-1', 'nav-jump-2', 'nav-jump-3', 'nav-jump-4', 'nav-jump-5', 'nav-jump-6', 'nav-jump-7', 'nav-jump-8', 'nav-jump-9', 'nav-jump-10'];
+let sections = ['#section-1', '#section-2', '#section-3', '#section-4', '#section-5', '#section-6', '#section-7', '#section-8', '#section-9', '#section-10'];
+
 function navColorChange() {
-    let button = document.getElementById('nav-jump-1');
-    let location = window.scrollY;
-    if (location >= 1048.5 && location <= 1650) {
-        button.style.backgroundColor = 'grey';
-    } else {
-        button.style.backgroundColor = '';
+    for (let i = 0; i <= 9; i++) {
+        let button = document.getElementById(navJumps[i]);
+        const div = document.querySelector(sections[i]);
+        const offset = 100.5; //accounts for navbar
+        const divStart = div.offsetTop - offset - 9.9;
+        const divEnd = div.offsetTop + div.offsetHeight - offset - 10;
+
+        //fine-tuning
+        console.log('section ' + (i+1) + ' starts at: ' + divStart);
+        console.log('section ' + (i+1) + ' ends at: ' + divEnd);
+
+        if (window.scrollY > divEnd || window.scrollY < divStart) {
+            button.style.backgroundColor = '#D9D9D9';
+        } else {
+            button.style.backgroundColor = '#9A9A9A';
+        }
     }
 }
 
-window.addEventListener('scroll', navColorChange);
-
-// for loop for applying behavior to all nav jumps?
-// i = 1; i <= 10; i++
-// "nav-jump-" + i
-// location + 602 each loop
-
+// animation test
