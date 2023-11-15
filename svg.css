@@ -1,0 +1,84 @@
+.svg-container {
+    display: block;
+    position: relative;
+    width: 99.8vw;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    z-index: -1;
+}
+
+.svg-header-bg {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    left: 2.5%;
+    z-index: -5;
+}
+
+.svg-header-ocean-1 {
+    position: absolute;
+    width: 40%;
+    top: 14%;
+    left: 11%;
+}
+
+.svg-header-ocean-2 {
+    position: absolute;
+    width: 29%;
+    top: 9%;
+    left: 60%;
+}
+
+.svg-header-land-1 {
+    position: absolute;
+    width: 22%;
+    top: 34%;
+    left: 55%;
+}
+
+.svg-header-land-2, .svg-header-land-3, .svg-header-land-4 {
+    position: absolute;
+    width: 10%;
+}
+
+.svg-header-land-2 {
+    top: 20%;
+    left: 26%;
+}
+
+.svg-header-land-3 {
+    top: 27%;
+    left: 38%;
+}
+
+.svg-header-land-4 {
+    top: 73%;
+    left: 40%;
+}
+
+.svg-header-air-1, .svg-header-air-2, .svg-header-air-3, .svg-header-air-4 {
+    position: absolute;
+    width: 15%;
+}
+
+.svg-header-air-1 {
+    top: 42%;
+    left: 37%;
+}
+
+.svg-header-air-2 {
+    top: 49%;
+    left: 46%;
+}
+
+.svg-header-air-3 {
+    top: 82%;
+    left: 32%;
+}
+
+.svg-header-air-4 {
+    top: 15%;
+    left: 77%;
+}
+

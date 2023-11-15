@@ -1,4 +1,6 @@
 // responsive nav 
+// https://stackoverflow.com/questions/37513628/check-if-scrolled-past-div-with-javascript-no-jquery
+
 window.addEventListener('scroll', navColorChange);
 
 let navJumps = ['nav-jump-1', 'nav-jump-2', 'nav-jump-3', 'nav-jump-4', 'nav-jump-5', 'nav-jump-6', 'nav-jump-7', 'nav-jump-8', 'nav-jump-9', 'nav-jump-10'];
@@ -24,6 +26,8 @@ function navColorChange() {
 }
 
 // pop-up
+// https://medium.com/allenhwkim/close-div-when-clicking-outside-it-97255c20a221 
+
 let pop = document.getElementById('pop-up-1');
 let blocker = document.getElementById('blocker-1');
 let button = document.getElementById('button-1');

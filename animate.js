@@ -1,12 +1,13 @@
-function animate() {
+// header
+function header() {
     anime({
-        targets: '.page-title',
-        translateX: 10,
-        opacity: 0.5,
-        duration: 3000,
-        easing: 'easeInOutExpo',
-        loop: true
+        targets: '.svg-header-ocean-1',
+        translateX: 15, 
+        duration: 1000,
+        loop: true,
+        direction: 'alternate',
+        easing: 'linear'
     });
 }
 
-
+header();

@@ -13,11 +13,10 @@ body {
 
 .nav-bar {
     background: white;
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* fixed position */
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,16 +47,6 @@ body {
 
 .right-scroll {
     margin-left: 70px;
-}
-
-/* header SVG */
-
-.earth-title-img {
-    width: 99.8vw;
-    height: 600px;
-    border: #515151 solid 1px;
-    /* account for fixed navbar */
-    margin-top: 100px;
 }
 
 /* header */
