@@ -44,4 +44,32 @@ function hidePop() {
 button.addEventListener('click', showPop);
 blocker.addEventListener('click', hidePop);
 
-// 
+// creare a bunch of stars in the background
+// specify radius & num
+
+createStars(6, 20);
+createStars(4, 50);
+createStars(2, 90);
+
+function createStars(radius, num) {
+    for (i = 0; i < num; i++) {
+        let container = document.querySelector('.visual-container');
+        let star = document.createElement('div');
+        star.className = 'star';
+        star.style.position = 'absolute';
+        randomPosition(star);
+        star.style.height = radius + 'px';
+        star.style.width = radius + 'px';
+        star.style.borderRadius = '50px';
+        star.style.background = 'white';
+        star.style.zIndex = '-100';
+        container.appendChild(star);
+    }
+} 
+
+function randomPosition(element) {
+    let num1 = Math.random() * 75;
+    let num2 = Math.random() * 100;
+    element.style.top = num1 + '%';
+    element.style.left = num2 + '%';
+}
