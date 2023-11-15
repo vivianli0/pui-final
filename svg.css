@@ -3,12 +3,13 @@
     width: 100%;
     height: 600px;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .svg-container {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 100%;
     margin-bottom: 60px;
     z-index: -1;
 }
@@ -85,5 +86,55 @@
 .svg-header-air-4 {
     top: 15%;
     left: 77%;
+}
+
+/* section 1 */
+
+.dark-red-bg-glow {
+    position: absolute;
+    z-index: -10;
+    width: 50%;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.red-bg-glow {
+    position: absolute;
+    z-index: -12;
+    width: 50%;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.red-circle-body {
+    position: absolute;
+    z-index: -9;
+    width: 30%;
+    left: 35%;
+    margin-top: 14.8%;
+}
+
+.yellow-glow {
+    position: absolute;
+    z-index: -5;
+    width: 30%;
+    left: 35%;
+    margin-top: 14.8%;
+}
+
+.lava-container {
+    position: absolute;
+    width: 30%;
+    height: 450px;
+    left: 35%;
+    /* border: 1px solid white; */
+    margin-top: 14.8%;
+}
+
+.lava-1 {
+    position: absolute;
+    z-index: -1;
+    left: 58%;
+    top: 55%;
 }
 
