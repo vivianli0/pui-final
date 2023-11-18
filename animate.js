@@ -38,28 +38,7 @@ for (let i = 0; i < selectStars.length; i++) {
 }
 
 
-flowingLava();
-
-function flowingLava() {
-    let path = document.querySelector('.lava-1 path');
-    let length = path.getTotalLength();
-    console.log(path.style.strokeDasharray);
-    path.style.strokeDasharray = length;
-    path.style.strokeDashoffset = length;
-
-    anime({
-        targets: path,
-        keyframes: [
-            {strokeDashoffset: 0},
-            {strokeDashoffset: 0},
-            {opacity: 0},
-        ],
-        duration: 2000,
-        easing: 'linear',
-        loop: true,
-    });
-}
-
+// sun glow
 expandingSun();
 
 function expandingSun() {
@@ -81,4 +60,29 @@ function expandingSun() {
     })
 }
 
+
+// can you animate functions?
+// path1, path2, path3, then loop
+let paths = ['.lava-1 path', '.lava-2 path', '.lava-3 path', '.lava-4 path', '.lava-5 path', '.lava-6 path', '.lava-7 path', '.lava-8 path']
+flowingLava();
+
+function flowingLava() {
+    let path = document.querySelector(paths[0]);
+    let length = path.getTotalLength();
+    console.log(path.style.strokeDasharray);
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+
+    anime({
+        targets: path,
+        keyframes: [
+            {strokeDashoffset: 0},
+            {strokeDashoffset: 0},
+            {opacity:0}
+        ],
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+    });
+}
 

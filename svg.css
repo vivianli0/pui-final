@@ -120,6 +120,7 @@
     width: 30%;
     left: 35%;
     margin-top: 14.8%;
+    filter: opacity(0.9);
 }
 
 .lava-container {
@@ -131,10 +132,44 @@
     margin-top: 14.8%;
 }
 
-.lava-1 {
+.lava {
     position: absolute;
     z-index: -1;
+}
+
+.lava-1 {
     left: 58%;
     top: 55%;
+    width: 40%;
 }
+
+.lava-2 {
+    width: 22%;
+}
+
+.lava-3 {
+    width: 20%;
+}
+
+.lava-4 {
+    width: 23%;
+}
+
+.lava-5 {
+    width: 23%;
+}
+
+.lava-6 {
+    width: 23%;
+}
+
+.lava-7 {
+    width: 23%;
+}
+
+.lava-8 {
+    width: 20%;
+}
+
+/* section 2 */
 

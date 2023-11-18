@@ -1,3 +1,6 @@
+/* media query: larger sizes just make body the dimension of my laptop */
+/* need to adjust for mobile... */
+
 html {
     scroll-behavior: smooth;
 }
