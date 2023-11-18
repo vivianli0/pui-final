@@ -38,4 +38,47 @@ for (let i = 0; i < selectStars.length; i++) {
 }
 
 
+flowingLava();
+
+function flowingLava() {
+    let path = document.querySelector('.lava-1 path');
+    let length = path.getTotalLength();
+    console.log(path.style.strokeDasharray);
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+
+    anime({
+        targets: path,
+        keyframes: [
+            {strokeDashoffset: 0},
+            {strokeDashoffset: 0},
+            {opacity: 0},
+        ],
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+    });
+}
+
+expandingSun();
+
+function expandingSun() {
+    anime({
+        targets: '.dark-red-bg-glow',
+        opacity: 0.5,
+        easing: 'easeInOutQuad',
+        duration: 1000,
+        loop: true
+    });
+
+    anime({
+        targets: '.red-bg-glow',
+        opacity: 0.7,
+        easing: 'easeInOutQuad',
+        duration: 1000,
+        loop: true, 
+        delay: Math.random() * 1000
+    })
+}
+
 
