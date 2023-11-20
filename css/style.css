@@ -15,6 +15,7 @@ body {
 /* nav */
 
 .nav-bar {
+    z-index: 100;
     background: white;
     height: 90px;
     display: flex;
@@ -96,7 +97,7 @@ p {
 /* timeline */
 
 .timeline-item {
-    height: 900px;
+    height: 800px;
     width: 90vw;
     /* border: #515151 solid 1px; */
     border-left: white solid 3px;
@@ -104,6 +105,25 @@ p {
     scroll-margin-top: 100px;
     padding-bottom: 100px;
 }
+
+#section-3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(2,0,36,1) 50%, rgba(16,26,65,1) 90%);
+}
+
+#section-4 {
+    height: 1200px;
+    background: #101A41;
+}
+
+#section-5 {
+    background: #101A41;
+}
+
+#section-6 {
+    background: #101A41;
+}
+
 
 .timeline-box {
     padding-top: 20px;
@@ -128,7 +148,7 @@ span {
 }
 
 .timeline button {
-    background: black;
+    background: rgb(0, 0, 0, 0);
     color: #FFE7A8;
     font-size: 25px;
     padding: 16px 21px;
@@ -172,10 +192,6 @@ span {
 #pop-up-1 {
     left: 5%;
     margin-top: -5%;
-}
-
-#section-4 {
-    height: 1200px;
 }
 
 /* next page */
