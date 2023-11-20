@@ -89,7 +89,8 @@ p {
 .introduction {
     width: 70%;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 /* timeline */
@@ -97,7 +98,7 @@ p {
 .timeline-item {
     height: 900px;
     width: 90vw;
-    border: #515151 solid 1px;
+    /* border: #515151 solid 1px; */
     border-left: white solid 3px;
     margin-left: 60px;
     scroll-margin-top: 100px;
@@ -138,6 +139,10 @@ span {
 
 .timeline button:hover {
     cursor: pointer;
+    background: #FFE7A8;
+    color: black;
+    transition: 0.3s;
+    border-radius: 0;
 }
 
 .blocker {
@@ -147,11 +152,13 @@ span {
     bottom: 0;
     right: 0;
     content: ' ';
-    background: rgba(0,0,0,0);
+    color: white;
+    background: rgba(0,0,0,0.5);
     visibility: hidden;
 }
 
 .pop-up {
+    position: absolute;
     background: #D9D9D9;
     color: black;
     font-size: 20px;
@@ -160,9 +167,15 @@ span {
     padding: 30px;
     border-radius: 20px;
     visibility: hidden;
-    position: relative;
-    left: 900px;
-    top: 100px;
+}
+
+#pop-up-1 {
+    left: 5%;
+    margin-top: -5%;
+}
+
+#section-4 {
+    height: 1200px;
 }
 
 /* next page */

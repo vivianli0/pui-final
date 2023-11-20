@@ -23,7 +23,7 @@ function header() {
 
 // stars fade in & out randomly
 const allStars = document.querySelectorAll('.star');
-const selectStars = Array.from(allStars).slice(0, 90);
+const selectStars = Array.from(allStars).slice(0, 200);
 for (let i = 0; i < selectStars.length; i++) {
     anime ({
         targets: selectStars[i],
@@ -61,15 +61,21 @@ function expandingSun() {
 }
 
 
-// can you animate functions?
-// path1, path2, path3, then loop
-let paths = ['.lava-1 path', '.lava-2 path', '.lava-3 path', '.lava-4 path', '.lava-5 path', '.lava-6 path', '.lava-7 path', '.lava-8 path']
-flowingLava();
+//flowing lava
+let paths = ['lava-1', 'lava-2', 'lava-3', 'lava-4', 'lava-5', 'lava-6', 'lava-7', 'lava-8']
+loopFlowingLava();
 
-function flowingLava() {
-    let path = document.querySelector(paths[0]);
+function loopFlowingLava() {
+    for (let i = 0; i < paths.length; i++) {
+        flowingLava(i);
+    }
+}
+
+//loop thru paths 
+//one path animated while others are static
+function flowingLava(i) {
+    let path = document.getElementById(paths[i]);
     let length = path.getTotalLength();
-    console.log(path.style.strokeDasharray);
     path.style.strokeDasharray = length;
     path.style.strokeDashoffset = length;
 
@@ -83,6 +89,26 @@ function flowingLava() {
         duration: 2000,
         easing: 'linear',
         loop: true,
+        delay: i * 100
     });
 }
 
+//prokaryote 
+addNoise();
+
+function addNoise() {
+    let dots = document.querySelectorAll('.prokaryote circle');
+    let dotsArray = Array.from(dots).splice(1, 50);
+    for (let i = 0; i < dotsArray.length; i++) {
+        anime({
+            targets: dotsArray[i],
+            translateX: Math.random() * 20 - 10,
+            translateY: Math.random() * 20 - 10,
+            direction: 'alternate',
+            easing: 'easeInOutQuad',
+            duration: 1000,
+            loop: true,
+            delay: Math.random() * 1000
+        });
+    }
+}

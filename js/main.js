@@ -47,9 +47,9 @@ blocker.addEventListener('click', hidePop);
 // creare a bunch of stars in the background
 // specify radius & num
 
-createStars(6, 30);
-createStars(4, 60);
-createStars(2, 120);
+createStars(5, 30);
+createStars(3, 30);
+createStars(2, 150);
 
 function createStars(radius, num) {
     for (i = 0; i < num; i++) {
@@ -63,7 +63,7 @@ function createStars(radius, num) {
         star.style.borderRadius = '50px';
         star.style.background = 'white';
         star.style.zIndex = '-100';
-        star.style.filter = 'blur(0.5px)';
+        star.style.filter = 'blur(1px)';
         container.appendChild(star);
     }
 } 
