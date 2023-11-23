@@ -95,6 +95,13 @@
 
 /* section 1 */
 
+#section-1 .face {
+    position: absolute;
+    width: 10%;
+    left: 47%;
+    margin-top: 27%;
+}
+
 .dark-red-bg-glow {
     position: absolute;
     z-index: -10;

@@ -37,6 +37,18 @@ for (let i = 0; i < selectStars.length; i++) {
     });
 }
 
+// face 
+let face = document.querySelector('#section-1 .face');
+
+anime({
+    targets: face,
+    translateY: 10,
+    rotate: 3,
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    duration: 1500,
+    loop: true
+});
 
 // sun glow
 expandingSun();
@@ -102,8 +114,8 @@ function addNoise() {
     for (let i = 0; i < dotsArray.length; i++) {
         anime({
             targets: dotsArray[i],
-            translateX: Math.random() * 20 - 10,
-            translateY: Math.random() * 20 - 10,
+            translateX: Math.random() * 30 - 15,
+            translateY: Math.random() * 30 - 15,
             direction: 'alternate',
             easing: 'easeInOutQuad',
             duration: 1000,
