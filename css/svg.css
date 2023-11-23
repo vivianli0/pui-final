@@ -149,20 +149,14 @@
 .eukaryote {
     position: absolute;
     width: 30%;
-    left: 15%;
+    left: 35%;
     margin-top: 10%;
 }
 
-.dialogue {
-    position: absolute;
-    width: 20%;
-    left: 43%;
-    margin-top: 8%;
-}
+/* section 6 */
 
-.dialogue-text-s5 {
+.cyanobacteria {
     position: absolute;
-    color: white;
-    margin-top: 9.7%;
-    left: 45%;
+    width: 100%;
+    margin-top: 10%;
 }

@@ -24,26 +24,6 @@ function navColorChange() {
     }
 }
 
-// show & hide pop-up
-
-let pop = document.getElementById('pop-up-1');
-let blocker = document.getElementById('blocker-1');
-let button = document.getElementById('button-1');
-
-function showPop() {
-    pop.style.visibility = 'visible';
-    blocker.style.visibility = 'visible';
-    pop.style.zIndex = '100';
-}
-
-function hidePop() {
-    pop.style.visibility = 'hidden';
-    blocker.style.visibility = 'hidden';
-}
-
-button.addEventListener('click', showPop);
-blocker.addEventListener('click', hidePop);
-
 // creare a bunch of stars in the background
 // specify radius & num
 
@@ -53,6 +33,7 @@ createStars(2, 150);
 
 function createStars(radius, num) {
     for (i = 0; i < num; i++) {
+        console.log('creating star')
         let container = document.querySelector('.visual-container');
         let star = document.createElement('div');
         star.className = 'star';

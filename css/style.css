@@ -121,7 +121,6 @@ p {
 }
 
 #section-4 {
-    height: 1200px;
     background: #101A41;
 }
 
@@ -131,6 +130,7 @@ p {
 
 #section-6 {
     background: #101A41;
+    height: 1080px;
 }
 
 
