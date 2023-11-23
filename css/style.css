@@ -231,14 +231,22 @@ span {
 /* ----------------------- */
 
 .card-set {
+    margin-top: 45%;
+}
+
+.card-set p {
+    font-size: 20px;
+    margin-left: 12%;
+}
+
+.card-set .cards {
     display: flex;
     justify-content: center;
-    margin-top: 45%;
 }
 
 .card-set .card, .card-set .back {
     width: 300px;
-    height: 250px;
+    height: 200px;
     margin: 30px;
     background: var(--black);
     border: 1px solid var(--yellow)
