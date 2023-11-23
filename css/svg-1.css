@@ -95,27 +95,18 @@
 
 /* section 1 */
 
-#section-1 .face {
+.baby-sun {
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    margin-top: 5%;
+}
+
+/* #section-1 .face {
     position: absolute;
     width: 10%;
     left: 47%;
     margin-top: 27%;
-}
-
-.dark-red-bg-glow {
-    position: absolute;
-    z-index: -10;
-    width: 50%;
-    left: 25%;
-    margin-top: 5%;
-}
-
-.red-bg-glow {
-    position: absolute;
-    z-index: -12;
-    width: 50%;
-    left: 25%;
-    margin-top: 5%;
 }
 
 .red-circle-body {
@@ -141,7 +132,7 @@
     width: 30%;
     left: 35%;
     margin-top: 17%;
-}
+} */
 
 /* section 2 */
 

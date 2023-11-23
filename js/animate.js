@@ -38,12 +38,12 @@ for (let i = 0; i < selectStars.length; i++) {
 }
 
 // face 
-let face = document.querySelector('#section-1 .face');
+let face = document.querySelectorAll('#section-1 .face');
 
 anime({
     targets: face,
-    translateY: 10,
-    rotate: 3,
+    translateX: 5,
+    rotate: 1,
     direction: 'alternate',
     easing: 'easeInOutQuad',
     duration: 1500,

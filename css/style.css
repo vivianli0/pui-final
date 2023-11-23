@@ -113,8 +113,7 @@ p {
 }
 
 #section-3 {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(2,0,36,1) 50%, rgba(16,26,65,1) 90%);
+    background: linear-gradient(180deg, var(--black) 10%, rgba(2,0,36,1) 50%, rgba(16,26,65,1) 90%);
 }
 
 #section-4 {
@@ -154,13 +153,13 @@ span {
 }
 
 .timeline button {
-    background: rgb(0, 0, 0, 0);
-    color: #FFE7A8;
+    background: var(--black);
+    color: var(--yellow);
     font-size: 25px;
     padding: 16px 21px;
     margin-left: 20px;
     border-radius: 20px;
-    border: 2px solid #FFE7A8;
+    border: 2px solid var(--yellow);
 }
 
 .timeline button:hover {
@@ -201,13 +200,19 @@ span {
 }
 
 .flip-card {
+    position: relative;
     width: 290px;
-    height: 230px;
-    background: black;
-    border: 1px solid #FFE7A8;
+    left: 70%;
 }
 
-/* next page */
+.flip-card .container {
+    width: 290px;
+    height: 230px;
+    background: var(--black);
+    border: 1px solid var(--yellow);
+}
+
+/* ---------- next page ---------- */
 
 .disclaimer {
     display: flex;
@@ -217,7 +222,7 @@ span {
 
 .disclaimer p {
     width: 510px;
-    color: white;
+    color: var(--white);
     font-size: 25px;
 }
 
@@ -232,6 +237,6 @@ span {
 }
 
 .disclaimer span {
-    color: #FFE7A8;
+    color: var(--yellow);
     text-decoration: none;
 }
