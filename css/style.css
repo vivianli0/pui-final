@@ -106,10 +106,14 @@ p {
 /* timeline */
 
 .timeline-item {
-    height: 800px;
+    height: 700px;
     /* border-left: 60px; */
     scroll-margin-top: 100px;
     padding-bottom: 100px;
+}
+
+#section-2 {
+    height: 1100px;
 }
 
 #section-3 {
@@ -146,6 +150,7 @@ p {
 .timeline-description {
     margin: 0;
     font-size: 20px;
+    width: 500px;
 }
 
 span {
@@ -201,15 +206,47 @@ span {
 
 .flip-card {
     position: relative;
-    width: 290px;
-    left: 70%;
+    margin-top: 9%;
+    left: 65%;
+}
+
+.flip-card p {
+    font-size: 20px;
 }
 
 .flip-card .container {
-    width: 290px;
-    height: 230px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
     background: var(--black);
     border: 1px solid var(--yellow);
+}
+
+.flip-card .back {
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: -1;
+}
+
+/* ----------------------- */
+
+.card-set {
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
+}
+
+.card-set .card, .card-set .back {
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+    background: var(--black);
+    border: 1px solid var(--yellow)
+}
+
+.card-set .back {
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 /* ---------- next page ---------- */

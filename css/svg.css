@@ -95,52 +95,28 @@
 
 /* section 1 */
 
-.baby-sun {
+.asteroid {
+    position: absolute;
+    width: 5%;
+    left: -5%;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+.baby-earth {
     position: absolute;
     width: 50%;
     left: 10%;
     margin-top: 5%;
 }
 
-/* #section-1 .face {
-    position: absolute;
-    width: 10%;
-    left: 47%;
-    margin-top: 27%;
-}
-
-.red-circle-body {
-    position: absolute;
-    z-index: -9;
-    width: 30%;
-    left: 35%;
-    margin-top: 14.8%;
-}
-
-.yellow-glow {
-    position: absolute;
-    z-index: -5;
-    width: 30%;
-    left: 35%;
-    margin-top: 14.8%;
-    filter: opacity(0.9);
-}
-
-.lava {
-    position: absolute;
-    z-index: -1;
-    width: 30%;
-    left: 35%;
-    margin-top: 17%;
-} */
-
 /* section 2 */
 
 .molten-earth {
     position: absolute;
-    width: 35%;
-    left: 32.5%;
-    margin-top: 12%;
+    width: 40%;
+    left: 30%;
+    margin-top: 7%;
 }
 
 /* section 3 */

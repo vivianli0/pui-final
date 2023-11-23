@@ -37,18 +37,38 @@ for (let i = 0; i < selectStars.length; i++) {
     });
 }
 
-// face 
-let face = document.querySelectorAll('#section-1 .face');
+//asteroid 
+asteroid();
 
-anime({
-    targets: face,
-    translateX: 5,
-    rotate: 1,
-    direction: 'alternate',
-    easing: 'easeInOutQuad',
-    duration: 1500,
-    loop: true
-});
+function asteroid() {
+    let asteroid = document.querySelectorAll('#section-1 .asteroid');
+    anime({
+        targets: asteroid,
+        keyframes: [
+            {translateX: 600, translateY: 600, opacity: 0},
+        ],
+        easing: 'easeInOutQuad',
+        duration: 2000,
+        loop: true,
+        delay: 500
+    });
+}
+
+// face 
+face();
+
+function face() {
+    let face = document.querySelectorAll('#section-1 .face');
+    anime({
+        targets: face,
+        translateX: 5,
+        rotate: 1,
+        direction: 'alternate',
+        easing: 'easeInOutQuad',
+        duration: 1500,
+        loop: true
+    });
+}
 
 // sun glow
 expandingSun();
