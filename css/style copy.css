@@ -19,7 +19,7 @@ body {
     margin: 0;
 }
 
-/* ------------------ nav (desktop) ------------------ */
+/* ------------------ nav ------------------ */
 
 .nav-bar {
     display: flex;
@@ -60,8 +60,6 @@ body {
     margin-left: 70px;
 }
 
-/* ------------------ nav (mobile) ------------------ */
-
 @media only screen and (max-width: 393px) {
     .nav-bar {
         height: 60px;
@@ -83,30 +81,36 @@ body {
     }
 }
 
-/* ------------------ svg container (desktop) ------------------ */
+/* ------------------ svg container ------------------ */
 
 .visual-container {
     height: 600px;
-    margin-top: 60px;
-    border: var(--pink) 1px solid;
+    margin-top: 90px;
+    /* border: var(--pink) 1px solid; */
 }
 
-/* ------------------ svg container (mobile) ------------------ */
+.visual-container svg {
+    width: 95%;
+}
 
 @media only screen and (max-width: 393px) {
     .visual-container {
-        height: 300px;
+        margin-top: 60px;
+        height: 180px;
+    }
+
+    .visual-container svg {
+        width: 100%;
     }
 }
 
-/* ------------------ header (desktop) ------------------ */
+/* ------------------ header ------------------ */
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: var(--pink) 1px solid;
 }
 
 h1, h2 {
@@ -138,11 +142,9 @@ header .subtitle {
 header .body {
     width: 70%;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 150px;
 }
-
-/* ------------------ header (mobile) ------------------ */
 
 @media only screen and (max-width: 393px) {
     header .title {
@@ -151,8 +153,9 @@ header .body {
     }
 
     header .subtitle {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 50px;
+        width: 75%;
     }
 
     header .body {
@@ -168,7 +171,6 @@ header .body {
 .timeline .item {
     scroll-margin-top: 100px;
     padding-bottom: 80px;
-    border: var(--pink) 1px solid;
 }
 
 .timeline .text-box {
@@ -176,7 +178,6 @@ header .body {
     padding-left: 60px;
     padding-bottom: 20px;
     padding-right: 60px;
-    border: var(--pink) 1px solid;
 }
 
 .timeline .title {
@@ -197,6 +198,10 @@ header .body {
     border: var(--pink) 1px solid;
 }
 
+.animation .baby-earth {
+    height: 600px;
+}
+
 .flip-card {
     display: flex;
     justify-content: center;
@@ -207,8 +212,6 @@ header .body {
     height: 300px;
     border: var(--pink) 1px solid;
 }
-
-/* ------------------ timeline (mobile) ------------------ */
 
 @media only screen and (max-width: 393px) {
     .timeline .text-box {
@@ -232,6 +235,11 @@ header .body {
     }
 
     .animation {
+        height: 390px;
+        text-align: center;
+    }
+
+    .animation .baby-earth {
         height: 390px;
     }
 
