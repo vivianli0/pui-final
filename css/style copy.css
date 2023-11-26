@@ -194,24 +194,34 @@ header .body {
 }
 
 .animation {
-    height: 600px;
+    height: 650px;
     border: var(--pink) 1px solid;
+    position: relative;
+    bottom: 20px;
 }
 
 .animation .baby-earth {
-    height: 600px;
+    height: 650px;
+    display: block;
+    margin: auto;
 }
 
 .flip-card {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .flip-card div {
     width: 500px;
     height: 300px;
-    border: var(--pink) 1px solid;
+    border: var(--yellow) 1px solid;
+    padding: 50px;
+    box-sizing: border-box;
 }
+
+
+
 
 @media only screen and (max-width: 393px) {
     .timeline .text-box {
@@ -237,6 +247,7 @@ header .body {
     .animation {
         height: 390px;
         text-align: center;
+        bottom: 5px;
     }
 
     .animation .baby-earth {
