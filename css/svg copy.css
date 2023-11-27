@@ -1,0 +1,76 @@
+.animation svg {
+    display: block;
+    margin: auto;
+}
+
+.animation .baby-earth {
+    height: 650px;
+}
+
+.molten-earth {
+    width: 550px;
+}
+
+.water-earth {
+    width: 550px;
+}
+
+.prokaryote {
+    width: 450px;
+}
+
+.eukaryote {
+    width: 450px;
+}
+
+#section-6 .animation {
+    height: 1035px;
+}
+
+.frozen-earth {
+    width: 450px;
+}
+
+@media only screen and (max-width: 393px) {
+    .animation .baby-earth {
+        height: 390px;
+    }
+
+    .molten-earth {
+        width: 330px;
+        height: 390px;
+    }
+
+    .water-earth {
+        width: 315px;
+        height: 400px;
+    }
+
+    .prokaryote {
+        width: 300px;
+        height: 500px;
+    }    
+
+    .eukaryote {
+        width: 300px;
+        height: 500px;
+    }
+
+    #section-6 .animation {
+        height: 350px;
+        top: 30px;
+    }
+
+    .cyanaobacteria {
+        width: 100%;
+    }
+
+    #section-7 .animation {
+        height: 500px;
+    }
+
+    .frozen-earth {
+        width: 290px;
+        height: 500px;
+    }
+}

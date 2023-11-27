@@ -6,6 +6,7 @@
     --lightGrey: #D9D9D9;
     --darkGrey: #9A9A9A;
     --pink: #FCA1FF;
+    --babyBlue: #75CCFF;
 }
 
 html {
@@ -195,33 +196,48 @@ header .body {
 
 .animation {
     height: 650px;
-    border: var(--pink) 1px solid;
     position: relative;
     bottom: 20px;
-}
-
-.animation .baby-earth {
-    height: 650px;
-    display: block;
-    margin: auto;
 }
 
 .flip-card {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
-.flip-card div {
-    width: 500px;
-    height: 300px;
+.flip-card .click {
     border: var(--yellow) 1px solid;
-    padding: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.flip-card .image, .flip-card .text {
+    width: 475px;
+    height: 348px;
+    border: var(--yellow) 1px solid;
     box-sizing: border-box;
 }
 
+#section-1 .flip-card .image {
+    background: url(../assets/collision-to-form-moon.jpeg);
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 
+#section-1 .flip-card .text {
+    padding: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
+.flip-card .link {
+    text-align: right;
+}
 
 @media only screen and (max-width: 393px) {
     .timeline .text-box {
@@ -250,29 +266,74 @@ header .body {
         bottom: 5px;
     }
 
-    .animation .baby-earth {
-        height: 390px;
-    }
-
     .flip-card {
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
+        margin-bottom: 0;
     }
 
-    .flip-card div {
+    .flip-card .click {
+        display: none;
+    }
+
+    .flip-card .image, .flip-card .text {
         width: 350px;
         height: 250px;
     }
+
+    #section-1 .flip-card .image {
+        background-size: cover;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+    }
+
+    #section-1 .flip-card .text {
+        height: 400px;
+        padding: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0;
+    }
 }
 
-/* ------------------ timeline misc ------------------ */
+/* ------------------ extra styling ------------------ */
 
 .timeline span {
     text-decoration: line-through;
 }
 
-/* ------------------ next page (desktop) ------------------ */
+.text a {
+    color: var(--babyBlue);
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background: var(--darkGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    text-align: center;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.footer p a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 393px) {
+    .footer {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* ------------------ next page ------------------ */
 
 .disclaimer {
     display: flex;
@@ -299,4 +360,8 @@ header .body {
 .disclaimer span {
     color: var(--yellow);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 393px) {
+    /*  */
 }
