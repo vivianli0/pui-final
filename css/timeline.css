@@ -23,3 +23,26 @@
     background: rgb(0,0,0);
     background: linear-gradient(180deg, var(--darkBlue) 15%, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 90%);
 }
+
+
+#section-8 .cards {
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section-8 .card {
+    height: 500px;
+    width: 400px;
+    border: 1px solid var(--yellow);
+    border-radius: 20px;
+}
+
+.card .picture {
+    width: 350px;
+    height: 300px;
+    border: 1px solid var(--yellow);
+    margin: auto;
+    margin-top: 50px;
+}
