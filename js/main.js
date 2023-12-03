@@ -71,7 +71,7 @@ function createSnowflakes(num) {
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake';
-            snowflake.src = '../assets/snowflake.png';
+            snowflake.src = 'assets/snowflake.png';
             snowflake.style.position = 'absolute';
             snowflake.style.left = Math.random() * 100 + '%';
             snowflake.style.top = Math.random() * 500 + 'px';
@@ -93,7 +93,7 @@ function createSnowflakes2(num) {
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake2';
-            snowflake.src = '../assets/snowflake.png';
+            snowflake.src = 'assets/snowflake.png';
             snowflake.style.position = 'absolute';
             snowflake.style.left = Math.random() * 100 + '%';
             snowflake.style.top = Math.random() * 500 + 'px';
