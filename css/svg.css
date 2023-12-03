@@ -7,10 +7,14 @@
     height: 650px;
 }
 
-.asteroid {
+/* .asteroid {
     position: absolute;
     width: 100px;
     left: 20%;
+} */
+
+#section-2 .animation, #section-3 .animation, #section-4 .animation, #section-5 .animation, #section-6 .animation, #section-7 .animation {
+    margin-top: 80px;
 }
 
 .molten-earth {

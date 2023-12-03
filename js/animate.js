@@ -1,9 +1,7 @@
 // simple header animation
 header();
 function header() {
-    const oceanTargets = ['.svg-header-ocean-1', '.svg-header-ocean-2'];
-    // const landTargets = ['.svg-header-land-1', '.svg-header-land-2', '.svg-header-land-3', '.svg-header-land-4'];
-    // const airTargets = ['.svg-header-air-1', '.svg-header-air-2', '.svg-header-air-3', '.svg-header-air-4'];
+    const oceanTargets = ['.ocean-1', '.ocean-2'];
 
     const animateTargets = (targets, property, value) => {
         anime({
@@ -17,8 +15,6 @@ function header() {
     }
 
     oceanTargets.forEach(target => animateTargets(target, 'translateX', 10));
-    // landTargets.forEach(target => animateTargets(target, 'translateY', 5));
-    // airTargets.forEach(target => animateTargets(target, 'translateX', 2));
 }
 
 // stars fade in & out randomly
@@ -38,7 +34,7 @@ for (let i = 0; i < selectStars.length; i++) {
 }
 
 //asteroid 
-asteroid();
+// asteroid();
 
 console.log(window.innerWidth);
 
