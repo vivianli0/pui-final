@@ -125,6 +125,22 @@ function flowingLava(i) {
     });
 }
 
+// water earth
+// move clouds 
+clouds();
+
+function clouds() {
+    let clouds = document.querySelectorAll('.cloud');
+    anime({
+        targets: clouds,
+        translateY: 10,
+        direction: 'alternate',
+        easing: 'easeInOutQuad',
+        duration: 1500,
+        loop: true
+    });
+}
+
 //prokaryote 
 addNoise();
 
@@ -134,8 +150,8 @@ function addNoise() {
     for (let i = 0; i < dotsArray.length; i++) {
         anime({
             targets: dotsArray[i],
-            translateX: Math.random() * 30 - 15,
-            translateY: Math.random() * 30 - 15,
+            translateX: Math.random() * 40 - 20,
+            translateY: Math.random() * 40 - 20,
             direction: 'alternate',
             easing: 'easeInOutQuad',
             duration: 1000,
