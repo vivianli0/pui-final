@@ -44,8 +44,18 @@ console.log(window.innerWidth);
 
 function asteroid() {
     let asteroid = document.querySelectorAll('#section-1 .asteroid');
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 500) {
         console.log('small screen');
+        anime({
+            targets: asteroid,
+            keyframes: [
+                {translateX: 300, translateY: 300, opacity: 0},
+            ],
+            easing: 'easeInOutQuad',
+            duration: 2000,
+            loop: true,
+            delay: 500
+        })
     } else {
         anime({
         targets: asteroid,
