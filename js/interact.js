@@ -22,3 +22,4 @@ let button3 = document.querySelector('#left-click-mobile');
 button.addEventListener('click', changeContent);
 button2.addEventListener('click', changeContentBack);
 button3.addEventListener('click', changeContentBack);
+

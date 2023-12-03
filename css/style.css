@@ -200,54 +200,8 @@ header .body {
     bottom: 20px;
 }
 
-.flip-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-.flip-card .click {
-    border: var(--yellow) 1px solid;
-    height: 50px;
-    width: 50px;
-    margin: 20px;
-}
-
-.flip-card .click:hover {
-    cursor: pointer;
-}
-
-.click svg {
-    width: 70%;
-    height: 70%;
-    margin-left: 8px;
-    margin-top: 8px;
-}
-
-.flip-card .image, .flip-card .text {
-    width: 475px;
-    height: 348px;
-    border: var(--yellow) 1px solid;
-    box-sizing: border-box;
-}
-
-#section-1 .flip-card .image {
-    background: url(../assets/collision-to-form-moon.jpeg);
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-#section-1 .flip-card .text {
-    padding: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-#content {
-    font-size: 18px;
+#section-2 .animation, #section-3 .animation {
+    height: 550px;
 }
 
 @media only screen and (max-width: 393px) {
@@ -275,37 +229,6 @@ header .body {
         height: 390px;
         text-align: center;
         bottom: 5px;
-    }
-
-    .flip-card {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        margin-bottom: 0;
-    }
-
-    .flip-card .image, .flip-card .text {
-        width: 350px;
-        height: 250px;
-    }
-
-    #section-1 .flip-card .image {
-        background-size: cover;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 20px;
-    }
-
-    #section-1 .flip-card .text {
-        height: 380px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 0;
-    }
-
-    #content {
-        font-size: 18px;
     }
 }
 

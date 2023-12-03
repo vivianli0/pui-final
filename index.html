@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/svg.css">
+    <link rel="stylesheet" href="css/flip-card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -156,7 +157,7 @@
                         What about the moon?
                     </h2>
                     <p id="content">
-                        The giant-impact hypothesis suggests that the Moon was formed from the ejecta of a collision between the early Earth and a Mars-sized planet, around 4.5 billion years ago (about 20 to 100 million years after the Solar System coalesced). Talk about a seriously out-of-this-world birth story! 🌕✨
+                        The giant-impact hypothesis suggests that the Moon was formed from the ejecta of a collision between the early Earth and a Mars-sized planet, around 4.5 billion years ago (about 20 to 100 million years after the Solar System coalesced). Talk about a seriously out-of-this-world birth story! &nbsp🌕✨
                     </p>
                 </div>
                 <div class="click" id="right-click">
@@ -269,6 +270,27 @@
                     </defs>
                 </svg>
             </div>
+            <div class="flip-card">
+                <div class="click" id="left-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36 13.75V18.25H9V22.75H4.5V18.25H0V13.75H4.5V9.25H9V13.75H36ZM13.5 4.75H9V9.25H13.5V4.75ZM13.5 4.75H18V0.25H13.5V4.75ZM13.5 27.25H9V22.75H13.5V27.25ZM13.5 27.25H18V31.75H13.5V27.25Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
+                <div class="image"></div>
+                <div class="text">
+                    <h2>
+                        What about the moon?
+                    </h2>
+                    <p id="content">
+                        The giant-impact hypothesis suggests that the Moon was formed from the ejecta of a collision between the early Earth and a Mars-sized planet, around 4.5 billion years ago (about 20 to 100 million years after the Solar System coalesced). Talk about a seriously out-of-this-world birth story! 🌕✨
+                    </p>
+                </div>
+                <div class="click" id="right-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 13.5V18H27V22.5H31.5V18H36V13.5H31.5V9H27V13.5H0ZM22.5 4.5H27V9H22.5V4.5ZM22.5 4.5H18V0H22.5V4.5ZM22.5 27H27V22.5H22.5V27ZM22.5 27H18V31.5H22.5V27Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
+            </div>
         </div>
 
         <!-- ---------------------- earth was blue ----------------------- -->
@@ -322,6 +344,28 @@
                     </defs>
                 </svg>  
             </div>
+            <div class="flip-card">
+                <div class="click" id="left-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36 13.75V18.25H9V22.75H4.5V18.25H0V13.75H4.5V9.25H9V13.75H36ZM13.5 4.75H9V9.25H13.5V4.75ZM13.5 4.75H18V0.25H13.5V4.75ZM13.5 27.25H9V22.75H13.5V27.25ZM13.5 27.25H18V31.75H13.5V27.25Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
+                <div class="image"></div>
+                <div class="text">
+                    <h2>
+                        How do we know?
+                    </h2>
+                    <p id="content">
+                        This pillow basalt on the seafloor near Hawaii was formed when magma extruded underwater. 
+                        Other, much older pillow basalt formations provide evidence for large bodies of water long ago in Earth's history.
+                    </p>
+                </div>
+                <div class="click" id="right-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 13.5V18H27V22.5H31.5V18H36V13.5H31.5V9H27V13.5H0ZM22.5 4.5H27V9H22.5V4.5ZM22.5 4.5H18V0H22.5V4.5ZM22.5 27H27V22.5H22.5V27ZM22.5 27H18V31.5H22.5V27Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
+            </div>
         </div>
         
         <!-- ------------------------ tiny cells -------------------------- -->
@@ -335,6 +379,8 @@
             </div>
 
             <div class="animation"> 
+                <div class="pop-up" id="pop-up-1"></div>
+
                 <svg class="prokaryote" viewBox="0 0 488 488" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="244" cy="244" r="240" fill="#6E8BAA" fill-opacity="0.3" stroke="#6E8BAA" stroke-width="8"/>
                     <path d="M232.141 201.891C225.403 201.891 216.266 200.213 209.832 202.398C200.733 205.488 196.858 219.355 195.889 227.749C192.814 254.4 230.47 272.64 252.675 261.846C265.116 255.798 274.027 245.42 274.35 231.044C274.673 216.656 271.078 212.935 256.351 213.299C240.133 213.699 237.722 225.489 232.775 238.27C226.826 253.636 219.235 266.987 204.762 275.789C172.094 295.654 140.275 243.796 148.736 215.073C153.287 199.626 166.693 186.407 177.51 175.146C185.036 167.31 194.499 160.012 205.649 158.794C220.619 157.159 234.183 159.442 245.197 170.456C253.498 178.757 257.383 192.344 257.238 203.919C257.086 216.09 244.442 221.614 235.563 227.242C226.106 233.236 217.841 241.081 216.423 252.846C213.486 277.229 222.968 295.332 238.542 313.625C250.355 327.5 265.196 344.683 285.314 341.955C306.847 339.035 326.313 311.624 332.404 292.52C337.69 275.941 337.742 258.638 316.559 257.853C300.504 257.258 288.06 262.716 277.836 275.092C267.294 287.853 266.449 302.493 263.386 317.808C259.85 335.489 239.03 339.386 223.521 339.863C208.295 340.332 196.352 341.159 186.002 329.153C183.365 326.094 179.861 322.261 178.777 318.252C176.519 309.897 190.42 302.036 195.255 297.844C206.446 288.141 217.924 277.467 232.077 272.303C240.522 269.222 249.263 269.115 258.125 269.198C271.964 269.327 285.664 271.229 299.447 271.479C317.176 271.802 309.536 300.614 324.291 306.844C346.916 316.396 373.08 289.587 373.599 267.803C373.946 253.237 367.353 241.666 355.6 232.946C346.574 226.25 336.454 227.523 325.686 226.925C295.31 225.237 281.657 190.522 283.603 164.245C284.499 152.153 294.387 137.7 307.496 136.929C321.024 136.133 326.264 147.748 328.474 159.745C330.532 170.913 330.289 183.219 321.693 191.497C312.365 200.48 303.041 203.032 290.385 203.032C278.741 203.032 268.567 199.156 259.013 207.722C249.646 216.119 247.775 237.945 256.288 247.459C267.748 260.268 293.932 261.91 307.877 252.529C315.943 247.103 331.22 230.378 326.129 219.066C324.373 215.163 319.393 213.164 316.306 210.51C309.119 204.334 303.373 196.786 297.673 189.279C286.965 175.175 272.706 164.256 262.372 149.922C254.598 139.139 243.923 128.506 229.859 127.803C212.614 126.941 200.816 139.338 188.22 149.415C175.54 159.559 163.41 170.207 151.081 180.723C141.987 188.479 134.093 195.79 128.329 206.454C120.891 220.214 120.305 235.159 130.61 248.41C135.804 255.087 142.312 258.231 148.863 263.24C155.562 268.363 151.015 277.691 148.863 284.028C147.4 288.336 147.839 293.664 142.525 295.182C133.021 297.898 124.918 296.275 119.709 287.197C111.369 272.661 126.54 258.189 135.427 247.776C147.508 233.62 158.131 231.263 171.742 244.227C181.561 253.578 187.977 263.072 191.643 276.106C194.909 287.719 192.983 299.696 195.128 311.344C197.925 326.525 211.275 335.151 223.014 343.412C228.734 347.437 234.184 351.834 239.873 355.898C240.505 356.349 242.117 358.017 242.345 358.813C243.415 362.56 255.131 360.461 258.252 360.461C278.331 360.461 301.541 356.122 319.285 346.264C334.248 337.951 340.516 325.682 340.516 309.125" stroke="#93AECB" stroke-width="5" stroke-linecap="round"/>
