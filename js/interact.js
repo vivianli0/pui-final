@@ -4,7 +4,8 @@ function changeContent() {
     let img = document.querySelector(".flip-card .image");
     img.style.background = "url(../assets/moon.png";
     img.style.backgroundSize = "cover";
-    container.textContent = "The name of the hypothesised protoplanet is derived from the mythical Greek titan Theia /ˈθiːə/, who gave birth to the Moon goddess Selene. This designation was proposed initially by the English geochemist Alex N. Halliday in 2000 and has become accepted in the scientific community.";
+    console.log(img);
+    container.textContent = "The name of the hypothesised protoplanet is derived from the mythical Greek titan Theia, who gave birth to the Moon goddess Selene. This designation was proposed initially by the English geochemist Alex N. Halliday in 2000 and has become accepted in the scientific community.";
 }
 
 function changeContentBack() {
