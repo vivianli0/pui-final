@@ -1,162 +1,76 @@
-/* global */
-
-
-/* header */
-
-.visual-container {
+.animation svg {
     display: block;
-    width: 100%;
-    height: 600px;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin: auto;
 }
 
-.svg-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 60px;
-    z-index: -1;
+.animation .baby-earth {
+    height: 650px;
 }
-
-.svg-header-bg {
-    position: absolute;
-    width: 95%;
-    height: 100%;
-    left: 2.5%;
-    z-index: -5;
-}
-
-.svg-header-ocean-1 {
-    position: absolute;
-    width: 40%;
-    top: 14%;
-    left: 12%;
-}
-
-.svg-header-ocean-2 {
-    position: absolute;
-    width: 29%;
-    top: 9%;
-    left: 60%;
-}
-
-.svg-header-land-1 {
-    position: absolute;
-    width: 22%;
-    top: 34%;
-    left: 55%;
-}
-
-.svg-header-land-2, .svg-header-land-3, .svg-header-land-4 {
-    position: absolute;
-    width: 10%;
-}
-
-.svg-header-land-2 {
-    top: 20%;
-    left: 26%;
-}
-
-.svg-header-land-3 {
-    top: 27%;
-    left: 38%;
-}
-
-.svg-header-land-4 {
-    top: 73%;
-    left: 40%;
-}
-
-.svg-header-air-1, .svg-header-air-2, .svg-header-air-3, .svg-header-air-4 {
-    position: absolute;
-    width: 15%;
-}
-
-.svg-header-air-1 {
-    top: 42%;
-    left: 37%;
-}
-
-.svg-header-air-2 {
-    top: 49%;
-    left: 46%;
-}
-
-.svg-header-air-3 {
-    top: 82%;
-    left: 32%;
-}
-
-.svg-header-air-4 {
-    top: 15%;
-    left: 77%;
-}
-
-/* section 1 */
-
-.asteroid {
-    position: absolute;
-    width: 5%;
-    left: -5%;
-    margin-top: 10%;
-    z-index: 1;
-}
-
-.baby-earth {
-    position: absolute;
-    width: 50%;
-    left: 10%;
-    margin-top: 5%;
-}
-
-/* section 2 */
 
 .molten-earth {
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    margin-top: 7%;
+    width: 550px;
 }
-
-/* section 3 */
 
 .water-earth {
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    margin-top: 10%;
+    width: 550px;
 }
-
-/* section 4 */
 
 .prokaryote {
-    position: absolute;
-    width: 30%;
-    left: 35%;
-    margin-top: 10%;
+    width: 450px;
 }
-
-.small-prokaryote {
-    position: absolute;
-    width: 20%;
-    left: 18%;
-    margin-top: 45%;
-}
-
-/* section 5 */
 
 .eukaryote {
-    position: absolute;
-    width: 30%;
-    left: 35%;
-    margin-top: 10%;
+    width: 450px;
 }
 
-/* section 6 */
+#section-6 .animation {
+    height: 1035px;
+}
 
-.cyanobacteria {
-    position: absolute;
-    width: 100%;
-    margin-top: 10%;
+.frozen-earth {
+    width: 450px;
+}
+
+@media only screen and (max-width: 393px) {
+    .animation .baby-earth {
+        height: 390px;
+    }
+
+    .molten-earth {
+        width: 330px;
+        height: 390px;
+    }
+
+    .water-earth {
+        width: 315px;
+        height: 400px;
+    }
+
+    .prokaryote {
+        width: 300px;
+        height: 500px;
+    }    
+
+    .eukaryote {
+        width: 300px;
+        height: 500px;
+    }
+
+    #section-6 .animation {
+        height: 350px;
+        top: 30px;
+    }
+
+    .cyanaobacteria {
+        width: 100%;
+    }
+
+    #section-7 .animation {
+        height: 500px;
+    }
+
+    .frozen-earth {
+        width: 290px;
+        height: 500px;
+    }
 }
