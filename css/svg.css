@@ -7,6 +7,12 @@
     height: 650px;
 }
 
+.asteroid {
+    position: absolute;
+    width: 100px;
+    left: 20%;
+}
+
 .molten-earth {
     width: 550px;
 }
@@ -32,8 +38,17 @@
 }
 
 @media only screen and (max-width: 393px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .animation .baby-earth {
         height: 390px;
+    }
+
+    .asteroid {
+        width: 50px;
+        left: 0;
     }
 
     .molten-earth {

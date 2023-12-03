@@ -40,9 +40,14 @@ for (let i = 0; i < selectStars.length; i++) {
 //asteroid 
 asteroid();
 
+console.log(window.innerWidth);
+
 function asteroid() {
     let asteroid = document.querySelectorAll('#section-1 .asteroid');
-    anime({
+    if (window.innerWidth < 600) {
+        console.log('small screen');
+    } else {
+        anime({
         targets: asteroid,
         keyframes: [
             {translateX: 600, translateY: 600, opacity: 0},
@@ -51,7 +56,8 @@ function asteroid() {
         duration: 2000,
         loop: true,
         delay: 500
-    });
+        });
+    }
 }
 
 // face 

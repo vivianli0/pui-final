@@ -215,6 +215,17 @@ header .body {
     margin: 20px;
 }
 
+.flip-card .click:hover {
+    cursor: pointer;
+}
+
+.click svg {
+    width: 70%;
+    height: 70%;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
 .flip-card .image, .flip-card .text {
     width: 475px;
     height: 348px;
@@ -233,6 +244,10 @@ header .body {
     padding: 50px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+#content {
+    font-size: 18px;
 }
 
 .flip-card .link {

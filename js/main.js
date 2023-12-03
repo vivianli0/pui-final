@@ -64,39 +64,47 @@ setInterval(snowflakeFall2, 15);
 
 function createSnowflakes(num) {
     for (i = 0; i < num; i++) {
-        console.log('creating snowflake')
-        let container = document.querySelector('#section-7 .animation');
-        let snowflake = document.createElement('img');
-        snowflake.className = 'snowflake';
-        snowflake.src = '../assets/snowflake.png';
-        snowflake.style.position = 'absolute';
-        snowflake.style.left = Math.random() * 100 + '%';
-        snowflake.style.top = Math.random() * 500 + 'px';
-        snowflake.style.filter = 'opacity(' + (50 + Math.random() * 50) + '%)';
-        snowflake.style.height = '40px';
-        snowflake.style.width = '40px';
-        snowflake.style.zIndex = '1';
-        container.appendChild(snowflake);
+        if (window.innerWidth < 600) {
+            console.log('small screen');
+        } else {
+            console.log('creating snowflake')
+            let container = document.querySelector('#section-7 .animation');
+            let snowflake = document.createElement('img');
+            snowflake.className = 'snowflake';
+            snowflake.src = '../assets/snowflake.png';
+            snowflake.style.position = 'absolute';
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.top = Math.random() * 500 + 'px';
+            snowflake.style.filter = 'opacity(' + (50 + Math.random() * 50) + '%)';
+            snowflake.style.height = '40px';
+            snowflake.style.width = '40px';
+            snowflake.style.zIndex = '1';
+            container.appendChild(snowflake);
+        }
     }
 }
 
 function createSnowflakes2(num) {
     for (i = 0; i < num; i++) {
-        console.log('creating snowflake')
-        let container = document.querySelector('#section-7 .animation');
-        let snowflake = document.createElement('img');
-        snowflake.className = 'snowflake2';
-        snowflake.src = '../assets/snowflake.png';
-        snowflake.style.position = 'absolute';
-        snowflake.style.left = Math.random() * 100 + '%';
-        snowflake.style.top = Math.random() * 500 + 'px';
-        snowflake.style.filter = 'opacity(' + Math.random() * 100 + '%)';
-        snowflake.style.height = '30px';
-        snowflake.style.width = '30px';
-        snowflake.style.zIndex = '-5';
-        container.appendChild(snowflake);
+        if (window.innerWidth < 600) {
+            console.log('small screen');
+        } else {
+            console.log('creating snowflake')
+            let container = document.querySelector('#section-7 .animation');
+            let snowflake = document.createElement('img');
+            snowflake.className = 'snowflake2';
+            snowflake.src = '../assets/snowflake.png';
+            snowflake.style.position = 'absolute';
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.top = Math.random() * 500 + 'px';
+            snowflake.style.filter = 'opacity(' + Math.random() * 100 + '%)';
+            snowflake.style.height = '30px';
+            snowflake.style.width = '30px';
+            snowflake.style.zIndex = '-5';
+            container.appendChild(snowflake);
+        }
     }
-}
+} 
 
 
 function snowflakeFall() {

@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/animate.js"></script>
+    <script defer src="js/interact.js"></script>
     <title>history of life</title>
 </head>
 
@@ -93,6 +94,18 @@
             </div>
 
             <div class="animation">
+                <svg class="asteroid" viewBox="0 0 118 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M110.241 85.6553L0 0L94.5422 105.896C96.9559 108.906 100.665 110.834 104.824 110.834C112.097 110.834 117.994 104.937 117.994 97.6636C117.994 92.3208 114.813 87.721 110.241 85.6553Z" fill="url(#paint0_linear_474_167)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_474_167" x1="-0.198244" y1="0.0809341" x2="117.802" y2="108.581" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#A70065"/>
+                    <stop offset="0.257966" stop-color="#F74538"/>
+                    <stop offset="0.675708" stop-color="#FF7A05"/>
+                    <stop offset="1" stop-color="#FFC451"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                    
                 <svg class="baby-earth" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- shading -->
                     <circle class="dark-red-bg-glow" cx="400" cy="400" r="400" fill="url(#paint0_radial_391_10)"/>
@@ -142,22 +155,25 @@
             </div>
 
             <div class="flip-card">
-                <div class="click"></div>
+                <div class="click" id="left-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36 13.75V18.25H9V22.75H4.5V18.25H0V13.75H4.5V9.25H9V13.75H36ZM13.5 4.75H9V9.25H13.5V4.75ZM13.5 4.75H18V0.25H13.5V4.75ZM13.5 27.25H9V22.75H13.5V27.25ZM13.5 27.25H18V31.75H13.5V27.25Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
                 <div class="image"></div>
                 <div class="text">
                     <h2>
                         What about the moon?
                     </h2>
-                    <p>
+                    <p id="content">
                         The giant-impact hypothesis suggests that the Moon was formed from the ejecta of a collision between the early Earth and a Mars-sized planet, around 4.5 billion years ago (about 20 to 100 million years after the Solar System coalesced).
                     </p>
-                    <p class="link">
-                        <a href="https://en.wikipedia.org/wiki/Giant-impact_hypothesis" target="_blank">
-                        read more in wikipedia 
-                        </a>
-                    </p>
                 </div>
-                <div class="click"></div>
+                <div class="click" id="right-click">
+                    <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 13.5V18H27V22.5H31.5V18H36V13.5H31.5V9H27V13.5H0ZM22.5 4.5H27V9H22.5V4.5ZM22.5 4.5H18V0H22.5V4.5ZM22.5 27H27V22.5H22.5V27ZM22.5 27H18V31.5H22.5V27Z" fill="#FFE7A8"/>
+                    </svg> 
+                </div>
             </div>
         </div>
 
