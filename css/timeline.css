@@ -1,0 +1,25 @@
+:root {
+    --font: Roboto, sans-serif;
+    --black: #000000;
+    --darkBlue: #101A41;
+    --white: #FFFFFF;
+    --yellow: #FFE7A8;
+    --lightGrey: #D9D9D9;
+    --darkGrey: #9A9A9A;
+    --pink: #FCA1FF;
+    --babyBlue: #75CCFF;
+}
+
+#section-3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(2,0,36,1) 50%, var(--darkBlue) 90%);
+}
+
+#section-4, #section-5 {
+    background: var(--darkBlue);
+}       
+
+#section-6 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, var(--darkBlue) 15%, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 90%);
+}

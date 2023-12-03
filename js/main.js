@@ -55,3 +55,67 @@ function randomPosition(element) {
     element.style.top = num1 + '%';
     element.style.left = num2 + '%';
 }
+
+// snowflakes 
+createSnowflakes(15);
+createSnowflakes2(20);
+setInterval(snowflakeFall, 10);
+setInterval(snowflakeFall2, 15);
+
+function createSnowflakes(num) {
+    for (i = 0; i < num; i++) {
+        console.log('creating snowflake')
+        let container = document.querySelector('#section-7 .animation');
+        let snowflake = document.createElement('img');
+        snowflake.className = 'snowflake';
+        snowflake.src = '../assets/snowflake.png';
+        snowflake.style.position = 'absolute';
+        snowflake.style.left = Math.random() * 100 + '%';
+        snowflake.style.top = Math.random() * 500 + 'px';
+        snowflake.style.filter = 'opacity(' + (50 + Math.random() * 50) + '%)';
+        snowflake.style.height = '40px';
+        snowflake.style.width = '40px';
+        snowflake.style.zIndex = '1';
+        container.appendChild(snowflake);
+    }
+}
+
+function createSnowflakes2(num) {
+    for (i = 0; i < num; i++) {
+        console.log('creating snowflake')
+        let container = document.querySelector('#section-7 .animation');
+        let snowflake = document.createElement('img');
+        snowflake.className = 'snowflake2';
+        snowflake.src = '../assets/snowflake.png';
+        snowflake.style.position = 'absolute';
+        snowflake.style.left = Math.random() * 100 + '%';
+        snowflake.style.top = Math.random() * 500 + 'px';
+        snowflake.style.filter = 'opacity(' + Math.random() * 100 + '%)';
+        snowflake.style.height = '30px';
+        snowflake.style.width = '30px';
+        snowflake.style.zIndex = '-5';
+        container.appendChild(snowflake);
+    }
+}
+
+
+function snowflakeFall() {
+    let snowflakes = document.querySelectorAll('.snowflake');
+    for (i = 0; i < snowflakes.length; i++) {
+        snowflakes[i].style.top = parseInt(snowflakes[i].style.top) + 1 + 'px';
+        if (parseInt(snowflakes[i].style.top) > 600) {
+            snowflakes[i].style.top = '1px';
+        }
+    }
+}
+
+function snowflakeFall2() {
+    let snowflakes = document.querySelectorAll('.snowflake2');
+    for (i = 0; i < snowflakes.length; i++) {
+        snowflakes[i].style.top = parseInt(snowflakes[i].style.top) + 1.5 + 'px';
+        if (parseInt(snowflakes[i].style.top) > 580) {
+            snowflakes[i].style.top = '1px';
+        }
+    }
+}
+
