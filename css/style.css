@@ -250,10 +250,6 @@ header .body {
     font-size: 18px;
 }
 
-.flip-card .link {
-    text-align: right;
-}
-
 @media only screen and (max-width: 393px) {
     .timeline .text-box {
         display: flex;
@@ -288,10 +284,6 @@ header .body {
         margin-bottom: 0;
     }
 
-    .flip-card .click {
-        display: none;
-    }
-
     .flip-card .image, .flip-card .text {
         width: 350px;
         height: 250px;
@@ -304,11 +296,16 @@ header .body {
     }
 
     #section-1 .flip-card .text {
-        height: 400px;
-        padding: 40px;
+        height: 380px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 0;
+    }
+
+    #content {
+        font-size: 18px;
     }
 }
 

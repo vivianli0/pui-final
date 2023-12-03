@@ -26,15 +26,18 @@ function navColorChange() {
 
 // creare a bunch of stars in the background
 // specify radius & num
+// in visual-container
+createStars(5, 30, '#80d8ff', '.visual-container');
+createStars(3, 30, '#2260dd', '.visual-container');
+createStars(2, 150, 'white', '.visual-container');
 
-createStars(5, 30);
-createStars(3, 30);
-createStars(2, 150);
+// in section 1
+// createStars(4, 30, '#c20600', '#section-1 .animation');
+// createStars(2, 30, 'orange', '#section-1 .animation');
 
-function createStars(radius, num) {
+function createStars(radius, num, color, location) {
     for (i = 0; i < num; i++) {
-        console.log('creating star')
-        let container = document.querySelector('.visual-container');
+        let container = document.querySelector(location);
         let star = document.createElement('div');
         star.className = 'star';
         star.style.position = 'absolute';
@@ -42,7 +45,7 @@ function createStars(radius, num) {
         star.style.height = radius + 'px';
         star.style.width = radius + 'px';
         star.style.borderRadius = '50px';
-        star.style.background = 'white';
+        star.style.background = color;
         star.style.zIndex = '-100';
         star.style.filter = 'blur(1px)';
         container.appendChild(star);
@@ -50,7 +53,7 @@ function createStars(radius, num) {
 } 
 
 function randomPosition(element) {
-    let num1 = Math.random() * 75;
+    let num1 = Math.random() * 90;
     let num2 = Math.random() * 100;
     element.style.top = num1 + '%';
     element.style.left = num2 + '%';
@@ -89,7 +92,6 @@ function createSnowflakes2(num) {
         if (window.innerWidth < 600) {
             console.log('small screen');
         } else {
-            console.log('creating snowflake')
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake2';

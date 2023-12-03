@@ -1,3 +1,4 @@
+////////////////////////// header ////////////////////////////
 // simple header animation
 header();
 function header() {
@@ -18,7 +19,7 @@ function header() {
 }
 
 // stars fade in & out randomly
-const allStars = document.querySelectorAll('.star');
+const allStars = document.querySelectorAll('.visual-container .star');
 const selectStars = Array.from(allStars).slice(0, 200);
 for (let i = 0; i < selectStars.length; i++) {
     anime ({
@@ -33,40 +34,58 @@ for (let i = 0; i < selectStars.length; i++) {
     });
 }
 
+
+//////////////////////////// baby earth ////////////////////////////
 //asteroid 
 // asteroid();
 
-console.log(window.innerWidth);
+// console.log(window.innerWidth);
 
-function asteroid() {
-    let asteroid = document.querySelectorAll('#section-1 .asteroid');
-    if (window.innerWidth < 500) {
-        console.log('small screen');
-        anime({
-            targets: asteroid,
-            keyframes: [
-                {translateX: 300, translateY: 300, opacity: 0},
-            ],
-            easing: 'easeInOutQuad',
-            duration: 2000,
-            loop: true,
-            delay: 500
-        })
-    } else {
-        anime({
-        targets: asteroid,
-        keyframes: [
-            {translateX: 600, translateY: 600, opacity: 0},
-        ],
-        easing: 'easeInOutQuad',
-        duration: 2000,
-        loop: true,
-        delay: 500
-        });
-    }
-}
+// function asteroid() {
+//     let asteroid = document.querySelectorAll('#section-1 .asteroid');
+//     if (window.innerWidth < 500) {
+//         console.log('small screen');
+//         anime({
+//             targets: asteroid,
+//             keyframes: [
+//                 {translateX: 300, translateY: 300, opacity: 0},
+//             ],
+//             easing: 'easeInOutQuad',
+//             duration: 2000,
+//             loop: true,
+//             delay: 500
+//         })
+//     } else {
+//         anime({
+//         targets: asteroid,
+//         keyframes: [
+//             {translateX: 600, translateY: 600, opacity: 0},
+//         ],
+//         easing: 'easeInOutQuad',
+//         duration: 2000,
+//         loop: true,
+//         delay: 500
+//         });
+//     }
+// }
 
 // face 
+
+const allS1Stars = document.querySelectorAll('#section-1 .star');
+for (let i = 0; i < allS1Stars.length; i++) {
+    anime ({
+        targets: allS1Stars[i],
+        opacity: [
+            { duration: 900, value: "0" },
+            { duration: 900, value: "1" }
+        ],
+        easing: 'linear',
+        loop: true,
+        delay: Math.random() * 1000
+    });
+}
+
+//face
 face();
 
 function face() {
@@ -137,7 +156,33 @@ function flowingLava(i) {
     });
 }
 
-// water earth
+
+//////////////////////////// molten earth ////////////////////////////
+// blowing steam one by one 
+
+let steams = ['steam-1', 'steam-2', 'steam-3', 'steam-4', 'steam-5']
+
+blowingSteam();
+
+function blowingSteam() {
+    for (let i = 0; i < steams.length; i++) {
+        let steam = document.getElementsByClassName(steams[i]);
+        anime({
+            targets: steam,
+            keyframes: [
+                {opacity: 0.5, duration: 800, translateY: -20},
+                {opacity: 0, duration: (4 - i) * 300}
+            ],
+            easing: 'easeInOutQuad',
+            loop: true,
+            delay: i * 300
+        });
+        console.log('steam ' + i + ' is animated');
+    }
+}
+
+
+//////////////////////////// water earth ////////////////////////////
 // move clouds 
 clouds();
 
