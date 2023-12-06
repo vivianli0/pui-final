@@ -11,7 +11,7 @@ function changeContent() {
 function changeContentBack() {
     let container = document.querySelector("#content");
     let img = document.querySelector(".flip-card .image");
-    img.style.background = flipCard["section-1"]["img-2"];
+    img.style.background = flipCard["section-1"]["img-1"];
     img.style.backgroundSize = "cover";
     container.textContent = flipCard["section-1"]["content-1"];
 }

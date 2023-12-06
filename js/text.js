@@ -17,9 +17,16 @@ const flipCard = {
     },
 
     "section-3": {
-        "title-1": "",
-        "content-1": "",
+        "title-1": "How do we know there was liquid water?",
+        "img-1": "url(assets/basalt.png)",
+        "content-1": "This pillow basalt on the seafloor near Hawaii was formed when magma extruded underwater. Other, much older pillow basalt formations provide evidence for large bodies of water long ago in Earth's history.",
+        
         "title-2": "",
+        "img-2": "",
         "content-2": ""
     },
+
+    "section-4": {
+        
+    }
 }

@@ -65,6 +65,21 @@
     margin-top: 50px;
 }
 
+.card .img-1 {
+    background: url(../assets/jellyfish.png);
+    background-size: cover;
+}
+
+.card .img-2 {
+    background: url(../assets/starfish.png);
+    background-size: cover;
+}
+
+.card .img-3 {
+    background: url(../assets/sea-sponge.png);
+    background-size: cover;
+}
+
 @media only screen and (max-width: 393px) {
     #section-8 .cards {
         flex-direction: column;
