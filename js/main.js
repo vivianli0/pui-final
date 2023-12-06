@@ -7,11 +7,11 @@ let sections = ['#section-1', '#section-2', '#section-3', '#section-4', '#sectio
 
 function navColorChange() {
     for (let i = 0; i <= 9; i++) {
-        let button = document.getElementById(navJumps[i]);
-        const div = document.querySelector(sections[i]);
-        const offset = 110; //accounts for navbar
-        const divStart = div.offsetTop - offset;
-        const divEnd = div.offsetTop + div.offsetHeight - offset - 0.1;
+        let button = document.getElementById(navJumps[i]); 
+        const div = document.querySelector(sections[i]); 
+        const offset = 110; //accounts for navbar 
+        const divStart = div.offsetTop - offset; 
+        const divEnd = div.offsetTop + div.offsetHeight - offset - 0.1; 
 
         // console.log('section ' + (i+1) + ' starts at: ' + divStart);
         // console.log('section ' + (i+1) + ' ends at: ' + divEnd);
