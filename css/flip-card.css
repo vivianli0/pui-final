@@ -36,6 +36,12 @@
     margin-top: 8px;
 }
 
+/* click hover */
+.flip-card .click:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 .flip-card .image, .flip-card .text {
     width: 475px;
     height: 348px;

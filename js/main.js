@@ -74,6 +74,7 @@ function createSnowflakes(num) {
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake';
+            snowflake.alt = 'snowflake';
             snowflake.src = 'assets/snowflake.png';
             snowflake.style.position = 'absolute';
             snowflake.style.left = Math.random() * 100 + '%';
@@ -95,6 +96,7 @@ function createSnowflakes2(num) {
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake2';
+            snowflake.alt = 'snowflake';
             snowflake.src = 'assets/snowflake.png';
             snowflake.style.position = 'absolute';
             snowflake.style.left = Math.random() * 100 + '%';
@@ -128,4 +130,17 @@ function snowflakeFall2() {
         }
     }
 }
+
+// cards alert upon click
+function alertCard() {
+    alert('This is a card!');
+}
+
+let card1 = document.querySelector('.cards .card-1');
+let card2 = document.querySelector('.cards .card-2');
+let card3 = document.querySelector('.cards .card-3');
+card1.addEventListener('click', alertCard);
+card2.addEventListener('click', alertCard);
+card3.addEventListener('click', alertCard);
+
 
