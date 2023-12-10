@@ -39,7 +39,24 @@
 
 #section-6 {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, var(--darkBlue) 15%, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 90%);
+    background: linear-gradient(180deg, var(--darkBlue) 10%, rgba(2,0,36,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+#section-7 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 50%, var(--darkBlue) 100%);
+}
+
+#section-8 {
+    background: var(--darkBlue);
+}
+
+#section-9 {
+    background: linear-gradient(180deg, var(--darkBlue) 0%, #1E4181 100%);
+}
+
+#section-10 {
+    background: linear-gradient(180deg, #1E4181 0%, #2A63B8 100%);
 }
 
 #section-8 .cards {
@@ -47,6 +64,7 @@
     height: 500px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 80px;
 }
 
 #section-8 .card {
@@ -54,7 +72,7 @@
     width: 380px;
     border: 1px solid var(--yellow);
     border-radius: 20px;
-    background: var(--black);
+    background: var(--darkBlue);
 }
 
 .card .picture {

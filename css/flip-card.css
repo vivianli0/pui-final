@@ -48,8 +48,18 @@
     background-size: cover;
 }
 
-#section-3 .flip-card .image {
-    background: url(../assets/basalt.png);
+#section-4 .flip-card .image {
+    background: url(../assets/volcano.png);
+    background-size: cover;
+}
+
+#section-9 .flip-card .image {
+    background: url(../assets/cambrian-explosion.jpeg);
+    background-size: cover;
+}
+
+#section-10 .flip-card .image {
+    background: url(../assets/extinction.jpeg);
     background-size: cover;
 }
 
@@ -66,6 +76,10 @@
 
 #content {
     font-size: 18px;
+}
+
+#section-9 .flip-card .image, #section-9 .flip-card .text, #section-10 .flip-card .image, #section-10 .flip-card .text {
+    height: 430px;
 }
 
 @media only screen and (max-width: 393px) {
