@@ -53,14 +53,14 @@
     body {
         overflow-x: hidden;
     }
+
+    #section-2 .animation, #section-3 .animation, #section-4 .animation, #section-5 .animation, #section-6 .animation, #section-7 .animation {
+        margin-top: 0;
+        height: 450px;
+    }
     
     .animation .baby-earth {
         height: 390px;
-    }
-
-    .asteroid {
-        width: 50px;
-        left: 0;
     }
 
     .molten-earth {

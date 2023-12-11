@@ -66,7 +66,6 @@ function createSnowflakes(num) {
         if (window.innerWidth < 600) {
             console.log('small screen');
         } else {
-            console.log('creating snowflake')
             let container = document.querySelector('#section-7 .animation');
             let snowflake = document.createElement('img');
             snowflake.className = 'snowflake';
