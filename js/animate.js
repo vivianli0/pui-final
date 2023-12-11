@@ -190,7 +190,7 @@ function clouds() {
     let clouds = document.querySelectorAll('.cloud');
     anime({
         targets: clouds,
-        translateY: 10,
+        translateY: 20,
         direction: 'alternate',
         easing: 'easeInOutQuad',
         duration: 1500,
@@ -198,7 +198,7 @@ function clouds() {
     });
 }
 
-//prokaryote 
+//////////////////////////// prokaryote //////////////////////////// 
 addNoise();
 
 function addNoise() {
@@ -215,5 +215,90 @@ function addNoise() {
             loop: true,
             delay: Math.random() * 1000
         });
+    }
+}
+
+
+//////////////////////////// eukaryote //////////////////////////// 
+
+animateEPath();
+function animateEPath() {
+    let e = document.querySelectorAll('.e-path');
+    anime({
+        targets: e,
+        translateX: 15,
+        rotate: 3,
+        easing: 'easeInOutQuad',
+        duration: 1200,
+        loop: true,
+        direction: 'alternate'
+    })
+}
+
+animateEDot();
+function animateEDot() {
+    let e = document.querySelectorAll('.e-dot');
+    let eArray = Array.from(e);
+    for (i = 0; i < eArray.length; i++) {
+        anime({
+            targets: eArray[i],
+            opacity: 0,
+            easing: 'easeInOutQuad',
+            duration: 800,
+            loop: true,
+            direction: 'alternate',
+            delay: Math.random() * 500
+        })
+    }
+}
+
+//////////////////////////// plant cells //////////////////////////// 
+
+blowBubbles();
+function blowBubbles() {
+    let bubbles = document.querySelectorAll('.cyano-bubble');
+    anime({
+        targets: bubbles,
+        opacity: 0.5,
+        translateY: -5,
+        easing: 'easeInOutQuad',
+        duration: 1000,
+        loop: true,
+        direction: 'alternate'
+    })
+}
+
+disappearDots();
+function disappearDots() {
+    let dots = document.querySelectorAll('.bg-yellow-dot');
+    let dotsArray = Array.from(dots);
+    for (i = 0; i < dotsArray.length; i++) {
+        anime({
+            targets: dotsArray[i],
+            opacity: 0,
+            easing: 'easeInOutQuad',
+            duration: 1000,
+            loop: true,
+            direction: 'alternate',
+            delay: Math.random() * 500
+        })
+    }
+}
+
+moveDots();
+function moveDots() {
+    let dots = document.querySelectorAll('.cyano-dot');
+    let dotsArray = Array.from(dots);
+    for (i = 0; i < dotsArray.length; i++) {
+        anime({
+            targets: dotsArray[i],
+            translateX: Math.random() * 20 - 10,
+            translateY: Math.random() * 20 - 10,
+            easing: 'easeInOutQuad',
+            duration: 1000,
+            loop: true,
+            direction: 'alternate',
+            delay: Math.random() * 500
+        })
     }
 }
