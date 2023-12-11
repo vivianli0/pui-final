@@ -31,10 +31,6 @@ createStars(5, 30, '#80d8ff', '.visual-container');
 createStars(3, 30, '#2260dd', '.visual-container');
 createStars(2, 150, 'white', '.visual-container');
 
-// in section 1
-// createStars(4, 30, '#c20600', '#section-1 .animation');
-// createStars(2, 30, 'orange', '#section-1 .animation');
-
 function createStars(radius, num, color, location) {
     for (i = 0; i < num; i++) {
         let container = document.querySelector(location);
@@ -133,7 +129,12 @@ function snowflakeFall2() {
 
 // cards alert upon click
 function alertCard() {
-    alert('This is a card!');
+    Swal.fire({
+        text: 'The answer is... We don\'t know yet! Scientists have presented evidence that all three existed in this time range, but there is no consensus on which one was the first. Could be sponges, could be little comb jellies.',
+        textColor: "white",
+        icon: "question",
+        showConfirmButton: false
+    });
 }
 
 let card1 = document.querySelector('.cards .card-1');
