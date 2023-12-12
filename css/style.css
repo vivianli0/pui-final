@@ -263,7 +263,7 @@ header .body {
 @media only screen and (max-width: 393px) {
     .footer {
         width: 100%;
-        height: 200px;
+        height: 100px;
     }
 }
 
@@ -273,12 +273,13 @@ header .body {
     display: flex;
     justify-content: center;
     margin-top: 320px;
+    margin-bottom: 320px;
 }
 
 .disclaimer p {
-    width: 510px;
+    width: 550px;
     color: var(--white);
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .disclaimer a {
@@ -297,5 +298,14 @@ header .body {
 }
 
 @media only screen and (max-width: 393px) {
-    /*  */
+    .disclaimer {
+        width: 90%;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .disclaimer p {
+        font-size: 22px;
+    }
 }
